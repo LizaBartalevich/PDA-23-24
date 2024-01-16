@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.dashboard-link {
+  border: 2px lightgrey solid;
+  padding: 12px 10px;
+  border-radius: 20px;
+  background-color: black;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+  background: linear-gradient(
+    45deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbowAnimation 3s ease infinite;
+}
+
+@keyframes rainbowAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.subheader {
+  font-size: 18px;
+}
